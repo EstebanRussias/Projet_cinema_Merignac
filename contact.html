@@ -1,0 +1,100 @@
+!<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
+    <script src="script_list_film.js" defer ></script>
+    <link rel="shortcut icon" href="img/logo_cine.ico" type="image/x-icon">
+    <title>Contact du Cinéma Merignac</title>
+</head>
+<body>
+    <nav>
+        <ul id="nav_bar">
+            <li><a href="index.html"><img src="img/logo_cine.png" alt="logo_cine" id="logo_cine"></a></li>
+            <li><a href="list_film.html">Films</a></li>
+            <li><a href="trouver.html">Nous Trouver</a></li>
+            <li><a href="contact.html">Infos</a></li>
+            <li><a href="cartes.html">Cartes et Offres</a></li>
+            <li><img src="img/loupe.png" alt="loupe" id="loupe"></li>
+            
+        </ul>
+        
+    </nav>
+    <div id="vide"></div>
+
+    <div id="page_form">
+    
+    <form id="formulaire">
+        <p>Les champs précédés d'un * sont obligatoires.</p>
+        <div id="cat1">
+                <div id="cat1_gauche">
+                    <h5 class="PN">Prénom :</h5>
+                    <input type="text" placeholder="Prénom">
+                    <h5>Votre e-Mail :</h5>
+                    <input type="text" placeholder="e-Mail">
+                    
+                </div>
+                <div id="cat1_droite">
+                    <h5 class="PN">Nom :</h5>
+                    <input type="text" placeholder="Nom">
+                    <h5>Sujet du message :</h5>
+                    <select name="but_message" id="but_message">
+                        <optgroup label="Votre demande">
+                            <option value="Cinéma" selected>Cinéma</option>
+                            <option value="Cartes d'abonnements & CE">Cartes d'abonnements & CE</option>
+                            <option value="Fidélité">Fidélité</option>
+                            <option value="Réservation">Réservation</option>
+                            <option value="Remarque & suggestion">Remarque & suggestion</option>
+                            <option value="Autres">Autres</option>
+                        </optgroup>
+                    </select>
+                </div>
+        </div>
+            <div id="cat2">
+                <h5>Corps du message :</h5>
+                <textarea placeholder="Message" name="Corps"></textarea>
+            </div>
+            <div id="cat3">
+                <button id="contact_share">Envoyer</button>
+            </div>
+    </form>
+
+
+
+    </div>
+    
+    
+        
+
+       
+
+            
+        
+    
+    <footer>
+        <div>
+            <ul>
+                <li>
+                    <div id="contact">
+                        <a href="https://www.facebook.com/merignaccine" target="_blank"><img src="img/facebook.png" alt="Facebook" class="logo_end"></a>
+                        <a href="https://twitter.com/MerignacCine" target="_blank"> <img src="img/X.png" alt="X" class="logo_end" id = "rectif"></a>
+                        <a href="contact.html"><img src="img/logo_mail.png" alt="mail" class="logo_end"></a>
+                    </div>
+                </li>
+                <li>Groupe CM</li>
+                <li>Restauration</li>
+                <li>Politiques</li>
+                <li>Conditions Génerales</li>
+                <li>Mentions légales</li>
+            </ul>
+        </div>
+        
+        
+    </footer>
+        <div id="footfoot"></div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,345 @@
+*{box-sizing:border-box;margin:0;padding:0;border:0;font-size:100%;font:inherit;font-family:Arial,Helvetica,sans-serif;vertical-align:baseline;}
+#vide{
+    height: 15vh;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+}
+
+nav ul li{
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #C81C23 ;
+    
+    transition: ease-in 0.5s;
+    cursor: pointer;
+
+}
+#nav_bar{
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr  ;
+    height: 15vh;
+    background-color: #100F40;
+    color : #E9E9E9 ;
+
+}
+
+#recherche_nav{
+    margin-right: 10px;
+    background-color: transparent;
+    color: white;
+}
+#loupe{
+    width: 30px;
+    height: auto;
+}
+#logo_cine{
+    width: 200px;
+    height: auto;
+}
+
+    /* 
+    color #100F40   bleu foncé
+    color #C81C23   rouge 
+    color #E9E9E9   blanc 
+    color #020202   noir
+    color #423E3E   gris noir
+    color #C39243   OR
+    */
+
+
+/* Barre de recherche */
+#div_Recherche{
+    display: flex;
+    background-color: whitesmoke;
+    
+    height: 10vh;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    display: none;
+}
+#div_Recherche #input_recherche{
+    color: #100F40;
+    background-color: transparent;
+    border: transparent;
+    width: 60%;
+    font-size: 1.5rem;
+    border-bottom: solid 2px #100F40 ;
+}
+
+#div_Recherche_affiche_films{
+    background-color: whitesmoke;
+    height: 20vh;
+    display: none;
+}
+
+#loupe_recherche{
+    width: auto;
+    height:50%;
+    margin-right: 10px;
+}
+/*  */
+
+/* AFFIHAGE DES FILMS (recherche) */
+
+#zone_affichage_des_affiche{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: space-around;
+}
+
+.taille_img_recherche{
+    width: 10vh;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+h2{
+    padding: 10px;
+    font-size: 2rem;
+}
+h3{
+    padding: 5px;
+    
+    font-size: 1rem;
+    
+}
+#sortie_semaine{
+    margin: auto; 
+     
+    color: black;
+    margin-top: 30px;
+    width: 80%;
+    
+    background-color: whitesmoke;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+#sortie_semaine #sortie_semaine_film{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px; 
+}
+.taille_sortie_semaine_film{
+    padding: 5px;
+    width: 200px;
+}
+h4{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+#contact{
+    display: flex;
+    justify-content: space-around;
+
+}
+.logo_end{
+    width: 30px;
+    height: auto;
+    align-self: auto;
+}
+footer div ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    height: 80px;
+    background-color: #100F40;
+    color : #E9E9E9 ;
+}
+
+footer div ul li{
+    display: inline-block;
+    text-align: center;
+    align-self: center;
+    
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+#titre_carousel,#texte_carousel,.fleche_carousel,#carousel,#page_carousel{
+    animation: fade-down 0.8s;
+}
+
+
+
+
+
+.thecard{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    background-color: white;
+
+}
+.nn{
+    
+    width: 280px;
+    height: 330px;
+    margin: 20px;
+}
+.nn:hover .thecard{
+transform: rotateY(180deg);
+}
+
+
+.thefront{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+    backface-visibility: hidden;
+    background-color: white;
+    color:black;
+    z-index: 0;
+}
+
+.theback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.2);
+    color:#333;
+    transform: rotateY(180deg);
+    z-index: 0;
+}
+
+.theback a{
+    color: black;
+    text-decoration: none;
+    margin: 15px;
+    padding: 5px;
+    border: solid 1px ;
+    border-radius: 5px;
+}
+.theback a:hover{
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    padding: 5px;
+    background-color: #100F40;
+    border: solid 1px  #100F40;
+    border-radius: 5px;
+}
+
+body{
+    height: 100vh;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 15px; /* Pour les navigateurs basés sur WebKit (Chrome, Safari, etc.) */
+    
+}
+::-webkit-scrollbar-track {
+    
+    background-color: transparent;
+    border-radius: 8px; /* Ajustez la valeur selon vos préférences */
+}
+
+/* Couleur de la poignée de la barre de défilement */
+::-webkit-scrollbar-thumb {
+    background-color:   #100F40;
+    border-radius: 20px; /* Ajustez la valeur selon vos préférences */
+}
+
+/* Ajoutez une bordure à la poignée de la barre de défilement */
+::-webkit-scrollbar-thumb:hover {
+    background-color:  #100F40;
+}
+
+
+
+/* CSS pour la page contenant les informations et la bande annonce*/
+
+
+#principale {
+    display: flex;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    border-radius: 5px;
+    justify-content: center;
+}
+.infos{
+    width: 45vw;
+    height: 70vh;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    
+}
+
+.bande_annonce{
+    width: 45vw;
+    height: 70vh;
+    border-radius: 10px;
+}
+iframe{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+#titre_film{
+    font-size: 2rem;
+    margin-top: -5vh;
+}
